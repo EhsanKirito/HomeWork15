@@ -28,7 +28,7 @@ class InputFragment : Fragment(R.layout.fragment_input) {
                 viewModel.username = binding.txtName.text.toString()
             val i = binding.txtNumberOfTasks.text.toString()
                 viewModel.numberOfTasks.value = i.toInt()
-                findNavController().navigate(R.id.action_inputFragment_to_toDoFragment)
+                findNavController().navigate(R.id.action_inputFragment_to_mainFragment)
         }
 
 
