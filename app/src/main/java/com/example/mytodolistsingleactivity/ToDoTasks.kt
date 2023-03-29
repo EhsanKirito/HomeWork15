@@ -44,6 +44,8 @@ class ToDoViewModel : ViewModel(){
             }
             taskList.add(p)
 
+
+
             when (p.taskStatus){
                 TaskStatus.Todo -> {
                     taskListToDo.add(p)
