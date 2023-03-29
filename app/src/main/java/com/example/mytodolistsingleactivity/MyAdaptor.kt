@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mytodolist.TaskColor
 import com.example.mytodolist.ToDoTasks
 
-//class ToDoAdaptor(private val taskList:ArrayList<ToDoTasks>):RecyclerView.Adapter<ToDoAdaptor.ViewHolder>() {
+//class MyAdaptor(private val taskList:ArrayList<ToDoTasks>):RecyclerView.Adapter<MyAdaptor.ViewHolder>() {
 //    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 //        val taskName: TextView = itemView.findViewById(R.id.txtTaskName)
 //        val taskStatus: TextView = itemView.findViewById(R.id.txtTaskStatus)

@@ -14,6 +14,7 @@ import com.example.mytodolist.TaskColor
 import com.example.mytodolist.ToDoViewModel
 import com.example.mytodolistsingleactivity.databinding.FragmentDoneBinding
 import com.example.mytodolistsingleactivity.databinding.FragmentToDoBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class DoneFragment : Fragment(R.layout.fragment_done) {
     private lateinit var binding : FragmentDoneBinding
@@ -23,6 +24,13 @@ class DoneFragment : Fragment(R.layout.fragment_done) {
         super.onViewCreated(view, savedInstanceState)
         binding = DataBindingUtil.bind(view)!!
         recyclerViewInitiator()
+        buttonListener()
+    }
+
+    fun buttonListener(){
+        view?.findViewById<FloatingActionButton>(R.id.floatingActionButton)?.setOnClickListener {
+            viewModel.numberOfTasks.value = viewModel.numberOfTasks.value?.plus(1)
+        }
     }
 
     fun recyclerViewInitiator(){

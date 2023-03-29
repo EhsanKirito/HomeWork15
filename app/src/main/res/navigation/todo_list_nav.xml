@@ -11,12 +11,19 @@
         android:label="fragment_input"
         tools:layout="@layout/fragment_input" >
         <action
-            android:id="@+id/action_inputFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_inputFragment_to_doingFragment"
+            app:destination="@id/doingFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.mytodolistsingleactivity.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/doingFragment"
+        android:name="com.example.mytodolistsingleactivity.DoingFragment"
+        android:label="DoingFragment" />
+    <fragment
+        android:id="@+id/doneFragment"
+        android:name="com.example.mytodolistsingleactivity.DoneFragment"
+        android:label="DoneFragment" />
+    <fragment
+        android:id="@+id/toDoFragment"
+        android:name="com.example.mytodolistsingleactivity.ToDoFragment"
+        android:label="ToDoFragment" />
 </navigation>
