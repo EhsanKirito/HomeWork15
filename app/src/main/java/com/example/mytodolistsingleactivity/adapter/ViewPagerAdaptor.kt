@@ -1,7 +1,10 @@
-package com.example.mytodolistsingleactivity
+package com.example.mytodolistsingleactivity.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.mytodolistsingleactivity.ui.DoingFragment
+import com.example.mytodolistsingleactivity.ui.DoneFragment
+import com.example.mytodolistsingleactivity.ui.ToDoFragment
 
 class ViewPagerAdaptor(fragment:Fragment): FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
